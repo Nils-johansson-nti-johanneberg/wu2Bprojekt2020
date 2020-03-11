@@ -1,0 +1,51 @@
+#earth{
+    position: fixed;
+    top: 34vh;
+    left: 32vw;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#merkurius{
+    position: fixed;
+    top: 57vh;
+    left: 37vw;
+}
+#venus{
+    position: fixed;
+    top: 46vh;
+    left: 32vw;
+}
+#mars{
+    position: fixed;
+    top: 26vh;
+    left: 39vw;
+}
+#jupiter{
+    position: fixed;
+    top: 20vh;
+    left: 47vw;
+}
+#saturnus{
+    position: fixed;
+    top: 21vh;
+    left: 58vw;
+}
+#uranus{
+    position: fixed;
+    top: 29vh;
+    left: 69vw;
+}
+#neptunus{
+    position: fixed;
+    top: 42vh;
+    left: 73vw;
+}
+#pluto{
+    position: fixed;
+    top: 57vh;
+    left: 73vw;
+}

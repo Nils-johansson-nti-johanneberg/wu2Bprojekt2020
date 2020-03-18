@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+#container{
+    display: grid;
+    background:darkslategrey;
+    grid-gap: 4px;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'h h h'
+    'as1 ar1 ar1'
+    'ar2 ar2 as2'
+    'ar3 ar3 as3'
+    'ar4 ar4 ar4'
+    'fo fo fo'
+}
+header{
+    grid-area: h;
+    background: whitesmoke
+}
+#as1{
+    grid-area: as1;
+    background: whitesmoke
+}
+
+#as2{
+    grid-area: as2;
+    background: whitesmoke
+}
+#as3{
+    grid-area: as3;
+    background: whitesmoke
+}
+.a1{
+    grid-area: ar1;
+    background: whitesmoke
+}
+.a2{
+    grid-area: ar2;
+    background: whitesmoke
+}
+.a3{
+    grid-area: ar3;
+    background: whitesmoke
+}
+.a4{
+    grid-area: ar4;
+    background: whitesmoke
+}
+#fo{
+    grid-area: fo;
+    background: whitesmoke;
+}

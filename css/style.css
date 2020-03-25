@@ -3,6 +3,17 @@
     top: 34vh;
     left: 32vw;
 }
+.earthBox{
+    position: fixed;
+    top: 34vh;
+    left: 32vw;
+    animation: rotate 5s infinite;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1); /*Animation funkar, behöver bara fixa js hover klass toggle*/
+}  
+@keyframes rotate{
+    from {-webkit-transform: rotate(0deg)}
+    to {-webkit-transform: rotate(360deg);}
+} 
 body{
     display: flex;
     justify-content: center;

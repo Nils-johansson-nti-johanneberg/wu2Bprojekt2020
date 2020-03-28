@@ -4,15 +4,11 @@
     left: 32vw;
 }
 .earthBox{
-    position: fixed;
-    top: 34vh;
-    left: 32vw;
-    animation: rotate 5s infinite;
-    animation-timing-function: cubic-bezier(1, 1, 1, 1); /*Animation funkar, behöver bara fixa js hover klass toggle*/
+    animation: rotate 2s infinite linear;
 }  
 @keyframes rotate{
     from {-webkit-transform: rotate(0deg)}
-    to {-webkit-transform: rotate(360deg);}
+    to {-webkit-transform: rotate(359deg);}
 } 
 body{
     display: flex;
@@ -59,4 +55,58 @@ body{
     position: fixed;
     top: 57vh;
     left: 73vw;
+}
+@media screen 
+and (max-width: 768px){
+    #sun{
+        top: 11vh;
+        left: 40vw;
+        position: fixed;
+    }
+    #merkurius{
+        position: absolute;
+        top: 26.5vh;
+        left: 47vw;
+    }
+    #venus{
+        position: fixed;
+        top: 31vh;
+        left: 46.5vw;
+    }
+    #earth{
+        position: fixed;
+        top: 37vh;
+        left: 47vw;
+    }
+    #mars{
+        position: fixed;
+        top: 42vh;
+        left: 47.5vw;
+    }
+    #jupiter{
+        position: fixed;
+        top: 46vh;
+        left: 45.2vw;
+    }
+    #saturnus{
+        position: fixed;
+        top: 53vh;
+        left: 43vw;
+    }
+    #uranus{
+        position: fixed;
+        top: 59vh;
+        left: 46.7vw;
+    }
+    #neptunus{
+        position: fixed;
+        top: 65vh;
+        left: 46.5vw;
+    }
+    #pluto{
+        position: fixed;
+        top: 72vh;
+        left: 48vw;
+    }
+
 }

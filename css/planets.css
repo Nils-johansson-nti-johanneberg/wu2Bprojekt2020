@@ -3,53 +3,138 @@ body{
 }
 #container{
     display: grid;
-    background:darkslategrey;
-    grid-gap: 4px;
+    background: url("../img/stars_galaxy_milky_way_starry_sky_night_sky_119125_1920x1080.jpg");
+    grid-gap: 30px;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
     grid-template-areas: 
     'h h h'
     'as1 ar1 ar1'
     'ar2 ar2 as2'
     'ar3 ar3 as3'
-    'ar4 ar4 ar4'
+    'ar4 ar4 as3'
     'fo fo fo'
 }
-header{
+#header{
     grid-area: h;
-    background: whitesmoke
+    background-color: transparent;
+    text-align: center;
+    font-size: 300%;
+    text-decoration-line: underline;
 }
 #as1{
     grid-area: as1;
-    background: whitesmoke
+    background: transparent;
+    margin: auto;
 }
 
 #as2{
     grid-area: as2;
-    background: whitesmoke
+    background: transparent;
+    color: white;
+    margin: auto;
 }
 #as3{
     grid-area: as3;
-    background: whitesmoke
+    background: transparent;
+    color: white;
 }
 .a1{
     grid-area: ar1;
-    background: whitesmoke
+    background: transparent;
+    color: white;
+    font-size: 13px;
 }
 .a2{
     grid-area: ar2;
-    background: whitesmoke
+    background: transparent;
+    color: white;
 }
 .a3{
     grid-area: ar3;
-    background: whitesmoke
+    background: transparent;
+    color: white;
 }
 .a4{
     grid-area: ar4;
-    background: whitesmoke
+    background: transparent;
+    color: white;
+    font-size: 20px;
 }
 #fo{
     grid-area: fo;
-    background: whitesmoke;
+    background: transparent;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+}
+@media screen 
+and (max-width: 768px){
+    #header{
+        grid-area: h;
+        background-color: transparent;
+        text-align: center;
+        font-size: 300%;
+    }
+    #as1{
+        grid-area: as1;
+        background: transparent;
+        margin: auto;
+        width: 100%;
+    }
+    
+    #as2{
+        grid-area: as2;
+        background: transparent;
+        margin: auto;
+        
+    }
+    #as3{
+        grid-area: as3;
+        background: transparent;
+        color: white;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .a1{
+        grid-area: ar1;
+        background: transparent;
+        color: white;
+        width: 100%;
+        overflow-y: scroll;
+        font-size: 15px;
+    }
+    .a2{
+        grid-area: ar2;
+        background: transparent;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+        overflow-y: scroll;
+    }
+    .a3{
+        grid-area: ar3;
+        background: transparent;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+        overflow-y: scroll;
+    }
+    .a4{
+        grid-area: ar4;
+        background: transparent;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+        overflow-y: scroll;
+    }
+    #fo{
+        grid-area: fo;
+        background: transparent;
+        text-align: center;
+        font-size: 200%;
+        color: white;
+        width: 100%;
+    }
 }

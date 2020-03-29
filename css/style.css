@@ -4,7 +4,7 @@
     left: 32vw;
 }
 .earthBox{
-    animation: rotate 2s infinite linear;
+    animation: rotate 5s infinite linear;
 }  
 @keyframes rotate{
     from {-webkit-transform: rotate(0deg)}
@@ -15,6 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: url("../img/stars_galaxy_milky_way_starry_sky_night_sky_119125_1920x1080.jpg");
 }
 #merkurius{
     position: fixed;
@@ -59,28 +60,29 @@ body{
 @media screen 
 and (max-width: 768px){
     #sun{
-        top: 11vh;
+        top: 9vh;
         left: 40vw;
         position: fixed;
+        width: 20%;
     }
     #merkurius{
-        position: absolute;
-        top: 26.5vh;
+        position: fixed;
+        top: 20.5vh;
         left: 47vw;
     }
     #venus{
         position: fixed;
-        top: 31vh;
+        top: 27vh;
         left: 46.5vw;
     }
     #earth{
         position: fixed;
-        top: 37vh;
+        top: 35vh;
         left: 47vw;
     }
     #mars{
         position: fixed;
-        top: 42vh;
+        top: 41vh;
         left: 47.5vw;
     }
     #jupiter{
@@ -90,22 +92,22 @@ and (max-width: 768px){
     }
     #saturnus{
         position: fixed;
-        top: 53vh;
-        left: 43vw;
+        top: 55vh;
+        left: 40vw;
     }
     #uranus{
         position: fixed;
-        top: 59vh;
+        top: 62vh;
         left: 46.7vw;
     }
     #neptunus{
         position: fixed;
-        top: 65vh;
+        top: 71vh;
         left: 46.5vw;
     }
     #pluto{
         position: fixed;
-        top: 72vh;
+        top: 80vh;
         left: 48vw;
     }
 

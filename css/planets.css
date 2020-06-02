@@ -4,8 +4,8 @@ body{
 #container{
     display: grid;
     background: url("../img/stars_galaxy_milky_way_starry_sky_night_sky_119125_1920x1080.jpg");
-    grid-gap: 30px;
-    height: 100vh;
+    grid-gap: 20px;
+    height: 100%;
     grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
     grid-template-areas: 
@@ -13,8 +13,9 @@ body{
     'as1 ar1 ar1'
     'ar2 ar2 as2'
     'ar3 ar3 as3'
-    'ar4 ar4 as3'
+    'ar4 ar4 ar4'
     'fo fo fo'
+    
 }
 #header{
     grid-area: h;
@@ -22,6 +23,7 @@ body{
     text-align: center;
     font-size: 300%;
     text-decoration-line: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #as1{
     grid-area: as1;
@@ -39,28 +41,33 @@ body{
     grid-area: as3;
     background: transparent;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .a1{
     grid-area: ar1;
     background: transparent;
     color: white;
     font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .a2{
     grid-area: ar2;
     background: transparent;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .a3{
     grid-area: ar3;
     background: transparent;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .a4{
     grid-area: ar4;
     background: transparent;
     color: white;
     font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #fo{
     grid-area: fo;
@@ -68,9 +75,116 @@ body{
     text-align: center;
     font-size: 200%;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container2{
+    display: grid;
+    background: url("../img/stars_galaxy_milky_way_starry_sky_night_sky_119125_1920x1080.jpg");
+    grid-gap: 30px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    'h h h'
+    'as2 as1 as1'
+    'ar2 ar2 ar1'
+    'ar3 ar3 as3'
+    'ar4 ar4 as3'
+    'fo fo fo'
+}
+#header{
+    grid-area: h;
+    background-color: transparent;
+    text-align: center;
+    font-size: 300%;
+    text-decoration-line: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#as1{
+    grid-area: as1;
+    background: transparent;
+    margin: auto;
+}
+
+#as2{
+    grid-area: as2;
+    background: transparent;
+    color: white;
+    margin: auto;
+}
+#as3{
+    grid-area: as3;
+    background: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a1{
+    grid-area: ar1;
+    background: transparent;
+    color: white;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a2{
+    grid-area: ar2;
+    background: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a3{
+    grid-area: ar3;
+    background: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a4{
+    grid-area: ar4;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#fo{
+    grid-area: fo;
+    background: transparent;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @media screen 
 and (max-width: 768px){
+
+    #container{
+        display: grid;
+        background: url("../img/stars_galaxy_milky_way_starry_sky_night_sky_119125_1920x1080.jpg");
+        grid-gap: 20px;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
+        grid-template-areas: 
+        'h h h'
+        'as1 ar1 ar1'
+        'ar2 ar2 as2'
+        'ar3 ar3 as3'
+        'ar4 ar4 ar4'
+        'fo fo fo'
+    }
+    #container2{
+        display: grid;
+        background: url("../img/stars_galaxy_milky_way_starry_sky_night_sky_119125_1920x1080.jpg");
+        grid-gap: 15px;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
+        grid-template-areas: 
+        'h h h'
+        'as2 as1 as1'
+        'ar2 ar2 ar1'
+        'ar3 ar3 as3'
+        'ar4 ar4 as3'
+        'fo fo fo'
+    }
     #header{
         grid-area: h;
         background-color: transparent;
@@ -96,6 +210,8 @@ and (max-width: 768px){
         color: white;
         width: 100%;
         overflow-y: scroll;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .a1{
         grid-area: ar1;
@@ -103,31 +219,35 @@ and (max-width: 768px){
         color: white;
         width: 100%;
         overflow-y: scroll;
-        font-size: 15px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .a2{
         grid-area: ar2;
         background: transparent;
         color: white;
         width: 100%;
-        font-size: 15px;
+        font-size: 20px;
         overflow-y: scroll;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .a3{
         grid-area: ar3;
         background: transparent;
         color: white;
         width: 100%;
-        font-size: 15px;
+        font-size: 20px;
         overflow-y: scroll;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .a4{
         grid-area: ar4;
         background: transparent;
         color: white;
         width: 100%;
-        font-size: 15px;
+        font-size: 30px;
         overflow-y: scroll;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     #fo{
         grid-area: fo;
@@ -136,5 +256,6 @@ and (max-width: 768px){
         font-size: 200%;
         color: white;
         width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
